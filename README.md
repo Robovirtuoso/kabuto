@@ -1,4 +1,4 @@
-#Kabuto.js
+# Kabuto.js
 
 Kabuto is JavaScript library that adds Controllers to Backbone.
 The way Backbone implements MVC it splits the responsibility of the controller
@@ -8,7 +8,7 @@ confusing to use.
 Backbone gives you the tools necessary to expand upon it and encourages
 it in it's documentation.
 
-##How to use
+## How to use
 
 To set up a Backbone controller start by defining your router.
 
@@ -43,7 +43,7 @@ registered and the router won't know how to look it up. If you get confused abou
 know that under the hood `_.str.classify(name) + 'Controller'` is being called on the value of the `register`
 field.
 
-##CoffeeScript
+## CoffeeScript
 
 If you are using CoffeeScript(my personal favorite) then you need to be sure to call `register` at the class level.
 Again, this registers your controller so the router knows how to lookup your controller. You don't need to pass any arguments
@@ -59,7 +59,7 @@ class ExampleController extends Backbone.Controller
     # router is the instance of your router
 ```
 
-##register
+## register
 
 If you dislike having to call `register` in all of your classes or supplying it as a property to `extend`,
 you can have a registrar file dedicated to calling `Backbone.Controller.register`.
@@ -87,14 +87,14 @@ When manually registering controllers be sure to supply the full controller name
 as the first argument to `register` and then the constructor function of the controller
 you want it to instantiate as the second argument.
 
-##Dependencies
+## Dependencies
 Kabuto requires `Backbone`, `underscore` and `underscore.string` to function properly.
 
-#Contributing
+# Contributing
 
 Fork it, run `npm install`, open up `spec/SpecRunner.html`, start writing tests and adding features.
 
-#Licence
+# Licence
 
 The MIT License
 
